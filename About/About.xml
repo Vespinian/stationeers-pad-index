@@ -5,16 +5,15 @@
   <Version>1.0</Version>
   <!-- Steam description using steam styling tags for Steam workshop page -->
   <Description>
-    This is a Plugin Mod.
-    It requires Bepinex to be installed with the StationeersLaunchPad plugin.
+    A plugin mod that adds extended Landingpad selection to Satellite Dishes.
+
+    Uses BepInEx with StationeersLaunchPad.
     See: https://github.com/StationeersLaunchPad/StationeersLaunchPad
 
-    This mod makes the TargetPadIndex logic type of the satellites look up the reference id of a Landingpad Data and Power Structure to make
-    Landing pad selection easier.
+    The TargetPadIndex logic type now looks up Landingpad Data and Power Structures by Reference ID for easier pad selection.
 
-    If the value in the TargetPadIndex in less or equal to 10, the vanilla behavior is used.
-
-    If not. The code checks all connected pads. For each pad, it checks the landing pad's network connected structures for a Landingpad Data and Power Structure. If it finds one, it sets the target pad to that pad and returns.
+    - Values 0-10: Vanilla behavior (selects by list index)
+    - Values 11+: Value is treated as a "Landingpad Data and Power" Reference ID, the patch code of this plugin then tries to find that ID in the structures connected to the pads in the satellite's pad list defaulting to vanilla behavior if nothing is found.
 
     Repo: https://github.com/Vespinian/stationeers-pad-index
   </Description>
@@ -38,16 +37,15 @@
   <LoadAfter />
   <InGameDescription>
     <![CDATA[<size="30"><color=#ffa500> Satellite Pad Index </color></size>
-This is a Plugin Mod.
-It requires Bepinex to be installed with the StationeersLaunchPad plugin.
+A plugin mod that adds extended Landingpad selection to Satellite Dishes.
+
+Uses BepInEx with StationeersLaunchPad.
 See: https://github.com/StationeersLaunchPad/StationeersLaunchPad
 
-This mod makes the TargetPadIndex logic type of the satellites look up the reference id of a Landingpad Data and Power Structure to make
-Landing pad selection easier.
+The TargetPadIndex logic type now looks up Landingpad Data and Power Structures by Reference ID for easier pad selection.
 
-If the value in the TargetPadIndex in less or equal to 10, the vanilla behavior is used.
-
-If not. The code checks all connected pads. For each pad, it checks the landing pad's network connected structures for a Landingpad Data and Power Structure. If it finds one, it sets the target pad to that pad and returns.
+- Values 0-10: Vanilla behavior (selects by list index)
+- Values 11+: Value is treated as a "Landingpad Data and Power" Reference ID, the patch code of this plugin then tries to find that ID in the structures connected to the pads in the satellite's pad list defaulting to vanilla behavior if nothing is found.
 
 Repo: https://github.com/Vespinian/stationeers-pad-index
 ]]>
