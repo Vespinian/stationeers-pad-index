@@ -7,7 +7,7 @@ using Objects.Electrical;
 
 namespace SatellitePadIndex
 {
-    [StationeersMod("SatellitePadIndex", "SatellitePadIndex", "1.0.0")]
+    [StationeersMod("SatellitePadIndex", "SatellitePadIndex", "1.0.1")]
     class SatellitePadIndex : ModBehaviour
     {
 

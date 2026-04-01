@@ -2,7 +2,7 @@
 <ModMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>Satellite Pad Index</Name>
   <Author>Vespinian</Author>
-  <Version>1.0</Version>
+  <Version>1.0.1</Version>
   <!-- Steam description using steam styling tags for Steam workshop page -->
   <Description>
     A plugin mod that adds extended Landingpad selection to Satellite Dishes.
@@ -20,6 +20,10 @@
   <!-- Ingame Description using TMP tags for Workshop menu -->
   <!-- All contents of ChangeLog should be changed for each publication for Steam workshop page -->
   <ChangeLog>
+    [h3]Version 1.0.1:[/h3]
+    [list]
+    [*]Updated thumbnail
+    [/list]
     [h3]Version 1.0:[/h3]
     [list]
     [*]Initial release
