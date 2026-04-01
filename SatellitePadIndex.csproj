@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+        <ModName>SatellitePadIndex</ModName>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+        <AssemblyName>SatellitePadIndex</AssemblyName>
+        <RootNamespace>SatellitePadIndex</RootNamespace>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)'=='Release'">
+        <Optimize>true</Optimize>
+        <DebugType>pdbonly</DebugType>
+        <DebugSymbols>false</DebugSymbols>
+    </PropertyGroup>
+    <Import Project="$(SolutionDir)SatellitePadIndex.VS.props" />
+    <ItemGroup>
+        <Reference Include="Assembly-CSharp">
+            <HintPath>$(StationeersDirectory)\rocketstation_Data\Managed\Assembly-CSharp.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UniTask">
+          <HintPath>$(StationeersDirectory)\rocketstation_Data\Managed\UniTask.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine">
+            <HintPath>$(StationeersDirectory)\rocketstation_Data\Managed\UnityEngine.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+            <HintPath>$(StationeersDirectory)\rocketstation_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.PhysicsModule">
+            <HintPath>$(StationeersDirectory)\rocketstation_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+      <Reference Include="UnityEngine.AnimationModule">
+        <HintPath>$(StationeersDirectory)\rocketstation_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+        <Private>False</Private>
+      </Reference>
+        <Reference Include="0Harmony">
+            <HintPath>$(StationeersDirectory)\BepInEx\core\0Harmony.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="StationeersMods.Interface">
+            <HintPath>$(StationeersDirectory)\BepInEx\plugins\StationeersLaunchPad\StationeersMods.Interface.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.UI">
+          <HintPath>$(StationeersDirectory)\rocketstation_Data\Managed\UnityEngine.UI.dll</HintPath>
+        </Reference>
+        <Reference Include="StationeersMods.Interface">
+            <HintPath>$(StationeersDirectory)\BepInEx\plugins\StationeersLaunchPad\StationeersMods.Interface.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="BepInEx">
+            <HintPath>$(StationeersDirectory)\BepInEx\core\BepInEx.dll</HintPath>
+        </Reference>
+        <Reference Include="BepInEx.Harmony">
+            <HintPath>$(StationeersDirectory)\BepInEx\core\BepInEx.Harmony.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+</Project>
